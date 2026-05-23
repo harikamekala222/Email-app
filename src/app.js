@@ -5,6 +5,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Email Service Running");
+});
+
 app.use('/api/email', emailRoutes);
 
 app.listen(3000, () => {
