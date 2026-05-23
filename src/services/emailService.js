@@ -9,14 +9,14 @@ Regards,
 AI SaaS Email System
 `;
 
-    console.log("Sending To:", to);
-    console.log("Subject:", subject);
-    console.log("Body:", formatted);
+    console.log("TO:", to);
+    console.log("SUBJECT:", subject);
+    console.log("BODY:", formatted);
 
     return {
         to,
         subject,
-        status: "sent"
+        status: "processed"
     };
 };
 
